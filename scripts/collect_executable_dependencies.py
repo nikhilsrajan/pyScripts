@@ -2,6 +2,13 @@ import os
 import os.path
 import sys
 
+"""
+Script that finds the dependencies of a give executable and copies them to a given folder.
+Usage: argv[0] [executable] [to-path, DEFAULT='.']
+
+Note: No windows support yet.
+"""
+
 def cp(from_path, to_path='.'):
     os.system(f'cp {from_path} {to_path}')
 
